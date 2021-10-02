@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Payment Form</h1>
+    </header>
+    <section>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form data-payment-form="form">
+                    <section>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" id="name" name="username" autofocus required pattern=[a-zA-Z\s]+>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">E-mail</label>
+                            <input class="form-control" type="email" id="mail" name="usermail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input class="form-control" type="password" id="pwd" name="password">
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Payment Information</h3>
+                        <div class="form-group">
+                            <label for="card">Card type</label>
+                            <select id="card" class="form-control" name="usercard">
+                                <option value="visa">Visa</option>
+                                <option value="amex">American Express</option>
+                                <option value="mc">Mastercard</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Card Number</label>
+                            <input class="form-control" type="tel" id="number" name="cardnumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Expiration Date<strong></label>
+                            <input class="form-control" type="date" id="date" name="expiration" required>
+                        </div>
+                    </section>
+                    <button type="submit" class="btn btn-default">Validate Payment</button>
+                    <a href="index.html" class="btn btn-info" role="button">Coffee Order</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div payment-message="person"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="scripts/paymentResponse.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js" charset="utf-8"></script>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
+    <script src="scripts/payment.js" charset="utf-8"></script>
+    <script src="scripts/mainPayment.js" charset="utf-8"></script>
+</body>
+
+</html>
