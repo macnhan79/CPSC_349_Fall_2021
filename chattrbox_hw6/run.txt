@@ -1,0 +1,18 @@
+Run:
+npm install
+npm install --save-dev nodemon
+npm install --save ws
+npm install -g wscat
+npm install -g babel-cli
+npm install --save-dev babel-core
+npm install --save-dev babel-preset-es2015
+npm install --save-dev browserify babelify watchify
+npm install --save-dev moment
+
+
+Terminal #1
+npm run build
+npm run watch
+
+Terminal #2
+npm run dev
