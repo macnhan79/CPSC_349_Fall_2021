@@ -1,0 +1,7 @@
+npm install --save-dev nodemon
+npm install --save ws
+npm install -g wscat
+npm install parcel-bundler
+
+
+npm run dev
